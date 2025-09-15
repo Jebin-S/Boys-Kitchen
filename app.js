@@ -46,9 +46,9 @@ function renderMenu() {
     menuCache.forEach(item => {
       const card = document.createElement('div');
       card.className = 'menu-card';
-      const imgSrc = item.image && item.image.trim() ? item.image : '/no-image.png';
+      const imgSrc = item.image && item.image.trim() ? item.image : 'no-image.png';
       card.innerHTML = `
-        <img src="${imgSrc}" alt="${item.name}" onerror="this.src='/no-image.png'">
+        <img src="${imgSrc}" alt="${item.name}" onerror="this.src='no-image.png'">
         <div class="info">
           <div class="name">${item.name}</div>
           <div class="meta">₹${item.price}</div>
